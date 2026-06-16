@@ -86,7 +86,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000497972a824be44be02bc1418cf26b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  computeEpisodeStats: 0
+  computeEpisodeStats: 1
+  timeScale: 1
   cave: {fileID: 6290316947874826912}
   door: {fileID: 7446194794802100701}
   floor: {fileID: 3187107233971639917}
@@ -100,18 +101,18 @@ MonoBehaviour:
   groupRewardSystem: {fileID: 11400000, guid: f3237ebf172c4ef0ebdd466d5c896db7, type: 2}
   inference: 1
   personalitySettings:
+  - personality: {fileID: 11400000, guid: 5934542fee0c3ff36a09f13a28ea37d3, type: 2}
+    behaviorName: ExtrovertBehavior
+    inferenceModel: {fileID: 5022602860645237092, guid: 88d9b27ab0d56f9c79baa4da4b0c011b, type: 3}
+  - personality: {fileID: 11400000, guid: d1183ecee145104f6ac1a9c1123639d2, type: 2}
+    behaviorName: NonAgreeableBehavior
+    inferenceModel: {fileID: 5022602860645237092, guid: 45efb1e3baf873779a74c6d78b3d4fca, type: 3}
   - personality: {fileID: 11400000, guid: 5f6f9e59944714a17bd64c558c53c501, type: 2}
     behaviorName: ConscientiousBehavior
     inferenceModel: {fileID: 5022602860645237092, guid: eae2357abb5e600dc8b840cfbd72e75c, type: 3}
   - personality: {fileID: 11400000, guid: e3d0483c418d32e6ba34fa09e3f0a6b3, type: 2}
     behaviorName: IntrovertBehavior
     inferenceModel: {fileID: 5022602860645237092, guid: 05f74e803445bf896a65cf99e73a978a, type: 3}
-  - personality: {fileID: 11400000, guid: d1183ecee145104f6ac1a9c1123639d2, type: 2}
-    behaviorName: NonAgreeableBehavior
-    inferenceModel: {fileID: 5022602860645237092, guid: 45efb1e3baf873779a74c6d78b3d4fca, type: 3}
-  - personality: {fileID: 11400000, guid: 5934542fee0c3ff36a09f13a28ea37d3, type: 2}
-    behaviorName: ExtrovertBehavior
-    inferenceModel: {fileID: 5022602860645237092, guid: 88d9b27ab0d56f9c79baa4da4b0c011b, type: 3}
   maxDistance: 0
   dragons: []
   agents: []

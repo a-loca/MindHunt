@@ -12,6 +12,7 @@ public class DungeonController : MonoBehaviour
     // ========================================================================
     [Header("Stats")]
     public bool computeEpisodeStats = false;
+    public float timeScale = 1f;
 
     [Header("Environment Objects")]
     [SerializeField]
@@ -127,6 +128,7 @@ public class DungeonController : MonoBehaviour
     // ========================================================================
     void Start()
     {
+        Time.timeScale = timeScale;
         spawnBlockerLayers = LayerMask.GetMask("Obstacle", "Door", "Dragon", "Agent", "Key");
 
         agents = new List<AgentBehavior>();
@@ -147,6 +149,13 @@ public class DungeonController : MonoBehaviour
         doorController = door.GetComponent<DoorController>();
         doorController.OnAgentEscape += WinEpisode;
 
+        if (computeEpisodeStats)
+        {
+            string teamName = GetTeamName();
+
+            EpisodeCSVLogger.Initialize(teamName);
+        }
+
         ResetEnvironment();
     }
 
@@ -154,7 +163,10 @@ public class DungeonController : MonoBehaviour
     {
         // Save global episode stats and create a new object for the next episode
         if (episodeCounter > 0 && computeEpisodeStats)
+        {
             EpisodeCSVLogger.LogGlobalEpisode(globalEpisodeStats.ToCSVString(episodeCounter));
+            Debug.Log("Completed episode: " + episodeCounter);
+        }
 
         // Reset the stats
         if (computeEpisodeStats)
@@ -351,7 +363,7 @@ public class DungeonController : MonoBehaviour
     {
         // Destroy the game object of the key in the environment
         Destroy(key);
-        
+
         keyGrabbedByAgent = true;
 
         agentGroup.AddGroupReward(groupRewardSystem.grabKey);
@@ -573,6 +585,11 @@ public class DungeonController : MonoBehaviour
 
             light.color = newColor;
         }
+    }
+
+    private string GetTeamName()
+    {
+        return string.Join("_", personalitySettings.Select(p => p.personality.personalityName));
     }
 
     // ========================================================================

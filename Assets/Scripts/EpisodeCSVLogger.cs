@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using UnityEngine;
 
@@ -8,7 +9,9 @@ public static class EpisodeCSVLogger
     private static string filePathGlobalEpisodes;
     private static bool initialized = false;
 
-    public static void Initialize()
+    private static string STATS_DIRECTORY = "/EvaluationResults";
+
+    public static void Initialize(string runName)
     {
         if (initialized)
             return;
@@ -17,7 +20,7 @@ public static class EpisodeCSVLogger
         string timestamp = System.DateTime.Now.ToString("yyyyMMdd_HHmmss");
 
         // Create the directory where the csv files will be stored if it does not exist
-        string directory = Application.dataPath + $"/StatLogs/stats_run_{timestamp}/";
+        string directory = Application.dataPath + $"{STATS_DIRECTORY}/{runName}_{timestamp}/";
         if (!Directory.Exists(directory))
             Directory.CreateDirectory(directory);
 
@@ -40,19 +43,16 @@ public static class EpisodeCSVLogger
 
     public static string GetAgentEpisodeHeader()
     {
-        return "episode;personality;hitsInflicted;dragonsKilled;hasKey;timeToFindKey;agentCollisions;distanceTraveled;avgSpeed;avgDistanceFromAgents;avgDistanceFromDragons;idleTime;timeInVicinityOfAgents;";
+        return "episode;personality;hitsInflicted;dragonsKilled;hasKey;timeToFindKey;agentCollisions;distanceTraveled;avgSpeed;avgDistanceFromAgents;avgDistanceFromDragons;idleTime;timeInVicinityOfAgents";
     }
 
     public static string GetGlobalEpisodeHeader()
     {
-        return "episode;win;failReason;episodeDuration;timeToKillAllDragons;timeToGrabKey;timeFromKeyGrabToEscape;";
+        return "episode;win;failReason;episodeDuration;timeToKillAllDragons;timeToGrabKey;timeFromKeyGrabToEscape";
     }
 
     public static void LogAgentEpisode(string row)
     {
-        if (!initialized)
-            Initialize();
-
         using (StreamWriter writer = new StreamWriter(filePathAgentEpisodes, true))
         {
             writer.WriteLine(row);
@@ -61,9 +61,6 @@ public static class EpisodeCSVLogger
 
     public static void LogGlobalEpisode(string row)
     {
-        if (!initialized)
-            Initialize();
-
         using (StreamWriter writer = new StreamWriter(filePathGlobalEpisodes, true))
         {
             writer.WriteLine(row);

@@ -2886,6 +2886,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 159458055669495560, guid: 20589383aa247a2bca495e9a253ec3b2, type: 3}
+      propertyPath: timeScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 159458055669495560, guid: 20589383aa247a2bca495e9a253ec3b2, type: 3}
+      propertyPath: computeEpisodeStats
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2735872117046276664, guid: 20589383aa247a2bca495e9a253ec3b2, type: 3}
       propertyPath: m_Name
       value: Dungeon
