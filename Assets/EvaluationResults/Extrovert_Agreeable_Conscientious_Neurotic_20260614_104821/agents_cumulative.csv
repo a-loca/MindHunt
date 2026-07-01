@@ -1,0 +1,5 @@
+personality,hitsInflicted_mean,hitsInflicted_std,dragonsKilled_mean,dragonsKilled_std,hasKey_mean,hasKey_std,timeToFindKey_mean,timeToFindKey_std,agentCollisions_mean,agentCollisions_std,distanceTraveled_mean,distanceTraveled_std,avgSpeed_mean,avgSpeed_std,avgDistanceFromAgents_mean,avgDistanceFromAgents_std,avgDistanceFromDragons_mean,avgDistanceFromDragons_std,idleTime_mean,idleTime_std,timeInVicinityOfAgents_mean,timeInVicinityOfAgents_std,keyPickupPct,killSharePct,hitSharePct
+Agreeable,2.843,1.692,0.98,0.717,0.0,0.0,,,5.45,4.893,20.493,5.715,1.159,0.865,2.839,0.704,5.194,2.002,0.681,0.434,6.475,4.661,0.0,50.4,48.1
+Conscientious,2.543,1.702,0.82,0.709,0.93,0.256,4.505,4.044,4.25,3.981,30.131,9.979,2.741,0.584,3.031,0.622,5.947,1.868,0.272,0.188,5.056,3.616,100.0,42.2,43.0
+Extrovert,0.267,0.661,0.077,0.267,0.0,0.0,,,5.92,5.081,17.336,5.27,0.758,0.695,2.862,0.821,6.779,2.301,2.508,1.442,7.445,5.202,0.0,3.9,4.5
+Neurotic,0.263,0.65,0.067,0.25,0.0,0.0,,,3.18,4.205,13.968,4.068,0.772,0.644,3.326,0.978,7.462,2.528,1.208,0.675,4.868,4.862,0.0,3.4,4.5

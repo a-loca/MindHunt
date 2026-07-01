@@ -1,0 +1,5 @@
+episode;personality;hitsInflicted;dragonsKilled;hasKey;timeToFindKey;agentCollisions;distanceTraveled;avgSpeed;avgDistanceFromAgents;avgDistanceFromDragons;idleTime;timeInVicinityOfAgents
+1;Extrovert;0;0;0;-1.000;0;11.987;0.367;4.055;9.024;1.620;0.500
+1;Agreeable;4;1;0;-1.000;2;12.751;0.669;3.775;3.262;0.620;1.980
+1;Conscientious;2;1;1;2.640;1;27.208;1.577;3.379;5.841;0.020;1.700
+1;Neurotic;0;0;0;-1.000;1;8.148;1.023;3.898;6.007;0.820;0.780

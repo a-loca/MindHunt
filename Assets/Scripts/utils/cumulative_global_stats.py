@@ -6,10 +6,13 @@ summary with:
   - Loss breakdown by failReason (DragonEscaped, Timer)
   - Mean of each numeric metric, computed only over episodes where that
     metric is meaningful (e.g. timeToGrabKey excluded on DragonEscaped losses)
+  - Phase time percentages: how much of episodeDuration each phase represents
+    on average, computed only over episodes where the key was grabbed
+    (wins + Timer losses; DragonEscaped excluded)
 
 Usage:
-    python summarize_global.py global.csv
-    python summarize_global.py run1/global.csv run2/global.csv
+    python cumulative_global_stats.py global.csv
+    python cumulative_global_stats.py run1/global.csv run2/global.csv
 
 Output:
     - Prints the summary to stdout
@@ -32,6 +35,11 @@ NON_METRIC_COLS = {"episode", "win", "failReason"}
 # On DragonEscaped losses the key is never grabbed, so these are 0 as a
 # sentinel — exclude those rows before averaging.
 KEY_COLS = {"timeToGrabKey", "timeFromKeyGrabToEscape"}
+
+# The three sequential phases that partition episodeDuration.
+# timeToGrabKey starts after all dragons are killed, so the three phases
+# are non-overlapping and should sum to ~episodeDuration on complete runs.
+PHASE_COLS = ["timeToKillAllDragons", "timeToGrabKey", "timeFromKeyGrabToEscape"]
 
 
 # ── Load data ─────────────────────────────────────────────────────────────────
@@ -96,10 +104,36 @@ def summarize(df: pd.DataFrame) -> dict[str, pd.DataFrame]:
 
     metric_means = pd.DataFrame([means])
 
+    # ── Phase time percentages ─────────────────────────────────────────────
+    # Restricted to episodes where the key was grabbed (timeToGrabKey > 0),
+    # i.e. wins and Timer losses. DragonEscaped episodes are excluded because
+    # two of the three phases have sentinel-zero values there.
+    #
+    # We compute mean(phase / episodeDuration) per episode rather than
+    # mean(phase) / mean(episodeDuration) to avoid bias from outlier durations.
+    key_grabbed = df[df["timeToGrabKey"] > 0].copy()
+    n_key_grabbed = len(key_grabbed)
+
+    available_phases = [c for c in PHASE_COLS if c in key_grabbed.columns]
+    phase_rows = []
+    for col in available_phases:
+        per_episode_pct = key_grabbed[col] / key_grabbed["episodeDuration"]
+        phase_rows.append(
+            {
+                "phase": col,
+                "episodes_used": n_key_grabbed,
+                "mean_seconds": round(key_grabbed[col].mean(), 4),
+                "mean_pct_of_duration": round(per_episode_pct.mean(), 4),
+            }
+        )
+
+    phase_pcts = pd.DataFrame(phase_rows)
+
     return {
         "overview": overview,
         "fail_breakdown": fail_counts,
         "metric_means": metric_means,
+        "phase_pcts": phase_pcts,
     }
 
 
@@ -108,7 +142,7 @@ def summarize(df: pd.DataFrame) -> dict[str, pd.DataFrame]:
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python summarize_global.py <file1.csv> [file2.csv ...]")
+        print("Usage: python cumulative_global_stats.py <file1.csv> [file2.csv ...]")
         sys.exit(1)
 
     input_paths = sys.argv[1:]
@@ -132,6 +166,10 @@ def main():
     print("── Metric means ─────────────────────────────────────────────────")
     print(results["metric_means"].to_string(index=False))
     print()
+    print("── Phase time percentages ───────────────────────────────────────")
+    print("   (episodes where key was grabbed: wins + Timer losses)")
+    print(results["phase_pcts"].to_string(index=False))
+    print()
 
     # Save: one sheet-like CSV with sections separated by a blank row
     first = pathlib.Path(input_paths[0])
@@ -144,6 +182,8 @@ def main():
         results["fail_breakdown"].to_csv(f, index=False)
         f.write("\nMETRIC MEANS\n")
         results["metric_means"].to_csv(f, index=False)
+        f.write("\nPHASE TIME PERCENTAGES (key grabbed episodes only)\n")
+        results["phase_pcts"].to_csv(f, index=False)
 
     print(f"Saved to: {output_file}")
 

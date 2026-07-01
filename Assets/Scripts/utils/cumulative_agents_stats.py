@@ -90,11 +90,12 @@ def compute_shares(df: pd.DataFrame) -> pd.DataFrame:
     total_episodes = df["episode"].nunique()
     total_kills = df["dragonsKilled"].sum()
     total_hits = df["hitsInflicted"].sum()
+    total_key_grabs = df["hasKey"].sum()
 
     shares = pd.DataFrame(
         {
             "personality": by_p["hasKey"].sum().index,
-            "keyPickupPct": (by_p["hasKey"].sum() / total_episodes * 100)
+            "keyPickupPct": (by_p["hasKey"].sum() / total_key_grabs * 100)
             .round(1)
             .values,
             "killSharePct": (by_p["dragonsKilled"].sum() / total_kills * 100)
