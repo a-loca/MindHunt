@@ -1,0 +1,239 @@
+{
+    "ConscientiousBehavior": {
+        "checkpoints": [
+            {
+                "steps": 8499992,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior/ConscientiousBehavior-8499992.onnx",
+                "reward": -19.344217523932457,
+                "creation_time": 1783063426.5492883,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior/ConscientiousBehavior-8499992.pt"
+                ]
+            },
+            {
+                "steps": 8999948,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior/ConscientiousBehavior-8999948.onnx",
+                "reward": -0.6803248254012089,
+                "creation_time": 1783064281.2977068,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior/ConscientiousBehavior-8999948.pt"
+                ]
+            },
+            {
+                "steps": 9499944,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior/ConscientiousBehavior-9499944.onnx",
+                "reward": -1.5392545365861483,
+                "creation_time": 1783065141.1478724,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior/ConscientiousBehavior-9499944.pt"
+                ]
+            },
+            {
+                "steps": 9999985,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior/ConscientiousBehavior-9999985.onnx",
+                "reward": -0.35321838192641736,
+                "creation_time": 1783066002.1490214,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior/ConscientiousBehavior-9999985.pt"
+                ]
+            },
+            {
+                "steps": 10000049,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior/ConscientiousBehavior-10000049.onnx",
+                "reward": -0.35321838192641736,
+                "creation_time": 1783066002.3465068,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior/ConscientiousBehavior-10000049.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000049,
+            "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior.onnx",
+            "reward": -0.35321838192641736,
+            "creation_time": 1783066002.3465068,
+            "auxillary_file_paths": [
+                "Assets/Results/Intro_Consc_NonConsc_Agree_2/ConscientiousBehavior/ConscientiousBehavior-10000049.pt"
+            ]
+        }
+    },
+    "AgreeableBehavior": {
+        "checkpoints": [
+            {
+                "steps": 8499992,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior/AgreeableBehavior-8499992.onnx",
+                "reward": 3.0103105902671814,
+                "creation_time": 1783063426.6124418,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior/AgreeableBehavior-8499992.pt"
+                ]
+            },
+            {
+                "steps": 8999948,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior/AgreeableBehavior-8999948.onnx",
+                "reward": 1.4959051905542005,
+                "creation_time": 1783064281.3475184,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior/AgreeableBehavior-8999948.pt"
+                ]
+            },
+            {
+                "steps": 9499944,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior/AgreeableBehavior-9499944.onnx",
+                "reward": 3.033724572686922,
+                "creation_time": 1783065141.2037709,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior/AgreeableBehavior-9499944.pt"
+                ]
+            },
+            {
+                "steps": 9999985,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior/AgreeableBehavior-9999985.onnx",
+                "reward": 2.1783674210309982,
+                "creation_time": 1783066002.2000654,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior/AgreeableBehavior-9999985.pt"
+                ]
+            },
+            {
+                "steps": 10000049,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior/AgreeableBehavior-10000049.onnx",
+                "reward": 2.1783674210309982,
+                "creation_time": 1783066002.3872101,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior/AgreeableBehavior-10000049.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000049,
+            "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior.onnx",
+            "reward": 2.1783674210309982,
+            "creation_time": 1783066002.3872101,
+            "auxillary_file_paths": [
+                "Assets/Results/Intro_Consc_NonConsc_Agree_2/AgreeableBehavior/AgreeableBehavior-10000049.pt"
+            ]
+        }
+    },
+    "IntrovertBehavior": {
+        "checkpoints": [
+            {
+                "steps": 8499992,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior/IntrovertBehavior-8499992.onnx",
+                "reward": -0.6242203712463379,
+                "creation_time": 1783063426.6744509,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior/IntrovertBehavior-8499992.pt"
+                ]
+            },
+            {
+                "steps": 8999948,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior/IntrovertBehavior-8999948.onnx",
+                "reward": 0.15320028334247823,
+                "creation_time": 1783064281.3975232,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior/IntrovertBehavior-8999948.pt"
+                ]
+            },
+            {
+                "steps": 9499944,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior/IntrovertBehavior-9499944.onnx",
+                "reward": -0.12672454970223562,
+                "creation_time": 1783065141.2598786,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior/IntrovertBehavior-9499944.pt"
+                ]
+            },
+            {
+                "steps": 9999985,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior/IntrovertBehavior-9999985.onnx",
+                "reward": 0.6152779817581177,
+                "creation_time": 1783066002.2506642,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior/IntrovertBehavior-9999985.pt"
+                ]
+            },
+            {
+                "steps": 10000049,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior/IntrovertBehavior-10000049.onnx",
+                "reward": 0.6152779817581177,
+                "creation_time": 1783066002.4276643,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior/IntrovertBehavior-10000049.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000049,
+            "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior.onnx",
+            "reward": 0.6152779817581177,
+            "creation_time": 1783066002.4276643,
+            "auxillary_file_paths": [
+                "Assets/Results/Intro_Consc_NonConsc_Agree_2/IntrovertBehavior/IntrovertBehavior-10000049.pt"
+            ]
+        }
+    },
+    "NonConscientiousBehavior": {
+        "checkpoints": [
+            {
+                "steps": 8499992,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior/NonConscientiousBehavior-8499992.onnx",
+                "reward": -2.0096434354782104,
+                "creation_time": 1783063426.7367864,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior/NonConscientiousBehavior-8499992.pt"
+                ]
+            },
+            {
+                "steps": 8999948,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior/NonConscientiousBehavior-8999948.onnx",
+                "reward": -0.5548483761293548,
+                "creation_time": 1783064281.44778,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior/NonConscientiousBehavior-8999948.pt"
+                ]
+            },
+            {
+                "steps": 9499944,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior/NonConscientiousBehavior-9499944.onnx",
+                "reward": -0.8169801228103184,
+                "creation_time": 1783065141.316494,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior/NonConscientiousBehavior-9499944.pt"
+                ]
+            },
+            {
+                "steps": 9999985,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior/NonConscientiousBehavior-9999985.onnx",
+                "reward": -0.7153975775837899,
+                "creation_time": 1783066002.3011117,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior/NonConscientiousBehavior-9999985.pt"
+                ]
+            },
+            {
+                "steps": 10000049,
+                "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior/NonConscientiousBehavior-10000049.onnx",
+                "reward": -0.7153975775837899,
+                "creation_time": 1783066002.4652138,
+                "auxillary_file_paths": [
+                    "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior/NonConscientiousBehavior-10000049.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000049,
+            "file_path": "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior.onnx",
+            "reward": -0.7153975775837899,
+            "creation_time": 1783066002.4652138,
+            "auxillary_file_paths": [
+                "Assets/Results/Intro_Consc_NonConsc_Agree_2/NonConscientiousBehavior/NonConscientiousBehavior-10000049.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.8.0+cu128"
+    }
+}

@@ -12,7 +12,6 @@ public class DungeonController : MonoBehaviour
     // ========================================================================
     [Header("Stats")]
     public bool computeEpisodeStats = false;
-    public float timeScale = 1f;
 
     [Header("Environment Objects")]
     [SerializeField]
@@ -128,7 +127,6 @@ public class DungeonController : MonoBehaviour
     // ========================================================================
     void Start()
     {
-        Time.timeScale = timeScale;
         spawnBlockerLayers = LayerMask.GetMask("Obstacle", "Door", "Dragon", "Agent", "Key");
 
         agents = new List<AgentBehavior>();

@@ -87,7 +87,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   computeEpisodeStats: 0
-  timeScale: 1
   cave: {fileID: 6290316947874826912}
   door: {fileID: 7446194794802100701}
   floor: {fileID: 3187107233971639917}
@@ -99,20 +98,20 @@ MonoBehaviour:
   numberOfDragons: 2
   timeToEscape: 30
   groupRewardSystem: {fileID: 11400000, guid: f3237ebf172c4ef0ebdd466d5c896db7, type: 2}
-  inference: 1
+  inference: 0
   personalitySettings:
-  - personality: {fileID: 11400000, guid: 5934542fee0c3ff36a09f13a28ea37d3, type: 2}
-    behaviorName: ExtrovertBehavior
-    inferenceModel: {fileID: 5022602860645237092, guid: 499006ecd2cc9430bbde89cce46a3d59, type: 3}
-  - personality: {fileID: 11400000, guid: e8fcb5bdcfc5b5cafb06df64db574053, type: 2}
-    behaviorName: AgreeableBehavior
-    inferenceModel: {fileID: 5022602860645237092, guid: 777ee4f00ddee673394326f34d0e41ff, type: 3}
+  - personality: {fileID: 11400000, guid: e3d0483c418d32e6ba34fa09e3f0a6b3, type: 2}
+    behaviorName: IntrovertBehavior
+    inferenceModel: {fileID: 0}
   - personality: {fileID: 11400000, guid: 5f6f9e59944714a17bd64c558c53c501, type: 2}
     behaviorName: ConscientiousBehavior
-    inferenceModel: {fileID: 5022602860645237092, guid: 619621cf26fa45bc887164deb6de2e92, type: 3}
-  - personality: {fileID: 11400000, guid: d132936f1f3b88ec795404532b3d0b0c, type: 2}
-    behaviorName: NeuroticBehavior
-    inferenceModel: {fileID: 5022602860645237092, guid: e1036f5b4abd93e6eb67214888440781, type: 3}
+    inferenceModel: {fileID: 0}
+  - personality: {fileID: 11400000, guid: 3658a782569923559a2a1b830e2a277f, type: 2}
+    behaviorName: NonConscientiousBehavior
+    inferenceModel: {fileID: 0}
+  - personality: {fileID: 11400000, guid: e8fcb5bdcfc5b5cafb06df64db574053, type: 2}
+    behaviorName: AgreeableBehavior
+    inferenceModel: {fileID: 0}
   maxDistance: 0
   dragons: []
   agents: []
