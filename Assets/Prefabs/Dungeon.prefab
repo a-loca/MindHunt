@@ -98,20 +98,20 @@ MonoBehaviour:
   numberOfDragons: 2
   timeToEscape: 30
   groupRewardSystem: {fileID: 11400000, guid: f3237ebf172c4ef0ebdd466d5c896db7, type: 2}
-  inference: 0
+  inference: 1
   personalitySettings:
-  - personality: {fileID: 11400000, guid: e3d0483c418d32e6ba34fa09e3f0a6b3, type: 2}
-    behaviorName: IntrovertBehavior
-    inferenceModel: {fileID: 0}
-  - personality: {fileID: 11400000, guid: 5f6f9e59944714a17bd64c558c53c501, type: 2}
-    behaviorName: ConscientiousBehavior
-    inferenceModel: {fileID: 0}
+  - personality: {fileID: 11400000, guid: 5934542fee0c3ff36a09f13a28ea37d3, type: 2}
+    behaviorName: 
+    inferenceModel: {fileID: 5022602860645237092, guid: 6e70f47f3fa96596fb2b0572aaebc032, type: 3}
+  - personality: {fileID: 11400000, guid: 2990a42f2fa4585a4be1fa3b4657a592, type: 2}
+    behaviorName: 
+    inferenceModel: {fileID: 5022602860645237092, guid: cac129e004c287ad6a3ab970f7f10348, type: 3}
   - personality: {fileID: 11400000, guid: 3658a782569923559a2a1b830e2a277f, type: 2}
-    behaviorName: NonConscientiousBehavior
-    inferenceModel: {fileID: 0}
-  - personality: {fileID: 11400000, guid: e8fcb5bdcfc5b5cafb06df64db574053, type: 2}
-    behaviorName: AgreeableBehavior
-    inferenceModel: {fileID: 0}
+    behaviorName: 
+    inferenceModel: {fileID: 5022602860645237092, guid: 7540a284b238e3dbbae96da4b28e6112, type: 3}
+  - personality: {fileID: 11400000, guid: d132936f1f3b88ec795404532b3d0b0c, type: 2}
+    behaviorName: 
+    inferenceModel: {fileID: 5022602860645237092, guid: dcfa54cf23cff8aafad15540d1414993, type: 3}
   maxDistance: 0
   dragons: []
   agents: []

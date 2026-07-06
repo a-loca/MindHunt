@@ -1,0 +1,18 @@
+OVERVIEW
+total_episodes,wins,losses,win_rate,loss_rate
+300,133,167,0.4433,0.5567
+
+LOSS BREAKDOWN
+failReason,count,pct_of_losses,pct_of_total
+Timer,94,0.5629,0.3133
+DragonEscaped,73,0.4371,0.2433
+
+METRIC MEANS
+episodeDuration_mean,timeToKillAllDragons_mean,timeToGrabKey_mean,timeFromKeyGrabToEscape_mean
+24.167,8.0685,14.527,6.7482
+
+PHASE TIME PERCENTAGES (key grabbed episodes only)
+phase,episodes_used,mean_seconds,mean_pct_of_duration
+timeToKillAllDragons,227,7.0356,0.2807
+timeToGrabKey,227,14.527,0.4611
+timeFromKeyGrabToEscape,227,6.7482,0.2582

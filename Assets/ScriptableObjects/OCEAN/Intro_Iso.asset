@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5503980f084a97fdb4a7d132e677952, type: 3}
   m_Name: Intro_Iso
   m_EditorClassIdentifier: 
-  personalityName: 
+  personalityName: IntroIso
   openness: 0
   conscientiousness: 0
-  extraversion: 0
+  extraversion: -1
   agreeableness: 0
   neuroticism: 0

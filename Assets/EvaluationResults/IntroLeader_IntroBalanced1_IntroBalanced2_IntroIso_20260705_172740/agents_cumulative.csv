@@ -1,5 +1,0 @@
-personality,hitsInflicted_mean,hitsInflicted_std,dragonsKilled_mean,dragonsKilled_std,hasKey_mean,hasKey_std,timeToFindKey_mean,timeToFindKey_std,agentCollisions_mean,agentCollisions_std,distanceTraveled_mean,distanceTraveled_std,avgSpeed_mean,avgSpeed_std,avgDistanceFromAgents_mean,avgDistanceFromAgents_std,avgDistanceFromDragons_mean,avgDistanceFromDragons_std,idleTime_mean,idleTime_std,timeInVicinityOfAgents_mean,timeInVicinityOfAgents_std,keyPickupPct,killSharePct,hitSharePct
-Intro_Balanced1,1.417,1.46,0.423,0.604,0.277,0.448,5.773,5.98,1.4,1.571,21.441,8.396,1.091,0.948,3.981,0.821,6.658,1.731,2.021,2.47,4.753,4.83,31.8,22.6,24.5
-Intro_Balanced2,1.19,1.398,0.38,0.574,0.277,0.448,5.286,5.986,1.57,1.973,21.131,8.523,1.084,0.925,3.987,0.881,7.05,2.07,2.318,3.019,4.931,5.275,31.8,20.3,20.6
-Intro_Iso,1.08,1.243,0.34,0.547,0.117,0.322,3.693,3.331,1.267,1.687,13.999,5.655,0.458,0.526,3.942,0.91,6.706,2.543,4.596,5.265,4.451,5.459,13.4,18.2,18.7
-Intro_Leader,2.097,1.535,0.727,0.683,0.2,0.401,4.672,4.813,1.977,2.012,23.866,8.696,0.702,0.825,3.819,0.802,6.622,1.827,6.847,6.514,6.174,5.908,23.0,38.9,36.3
